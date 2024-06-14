@@ -1,0 +1,44 @@
+{
+  "name": "roots/clover",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "description": "WordPress starter plugin",
+  "homepage": "https://roots.io/",
+  "authors": [
+    {
+      "name": "Roots",
+      "email": "team@roots.io",
+      "homepage": "https://github.com/roots"
+    }
+  ],
+  "keywords": ["wordpress"],
+  "support": {
+    "issues": "https://github.com/roots/clover/issues",
+    "forum": "https://discourse.roots.io/"
+  },
+  "autoload": {
+    "psr-4": {
+      "PluginNamespace\\": "src/"
+    },
+    "exclude-from-classmap": [
+      "vendor/roots/acorn/src/Illuminate/Foundation/Vite.php"
+    ],
+    "files": ["src/helpers.php", "src/Classes/Vite.php"]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PluginNamespace\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "roots/acorn": "^4.2"
+  },
+  "scripts": {
+    "lint": "pint",
+    "test": "echo 'The road to hell is paved with good intentions.'"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.2"
+  }
+}

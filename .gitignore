@@ -1,0 +1,26 @@
+
+# Node and composer dependencies
+node_modules
+vendor
+public
+
+# node logs
+yarn-error.log
+npm-debug.log
+
+# Playwright files
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# Environment variables
+.env
+
+# IDE files
+.idea
+.vscode
+.editorconfig
+
+# MacOS and Windows default files
+.DS_Store
+Thumbs.db
